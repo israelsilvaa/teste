@@ -9,6 +9,49 @@ public class ContaBanco {
     private float saldo;
     private boolean status;
 
+    //metodos especiais
+
+    public int getNumConta() {
+        return numConta;
+    }
+    public void setNumConta(int numConta) {
+        this.numConta = numConta;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getDono() {
+        return dono;
+    }
+    public void setDono(String dono) {
+        this.dono = dono;
+    }
+
+    public float getSaldo() {
+        return saldo;
+    }
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
+
+    public boolean getStatus() {
+        return status;
+    }
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    // Construtor
+    public ContaBanco(){
+        this.saldo = 0;
+        this.status = false;
+    }
+
     public void estadoAtual(){
         System.out.println("--------------------------------");
         System.out.println("conta:"+this.getNumConta());
@@ -79,49 +122,5 @@ public class ContaBanco {
     }
 
 
-    //metodos especiais
-    public ContaBanco(){
-        this.saldo = 0;
-        this.status = false;
-    }
 
-    public int getNumConta() {
-        return numConta;
-    }
-
-    public void setNumConta(int numConta) {
-        this.numConta = numConta;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public String getDono() {
-        return dono;
-    }
-
-    public void setDono(String dono) {
-        this.dono = dono;
-    }
-
-    public float getSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(float saldo) {
-        this.saldo = saldo;
-    }
-
-    public boolean getStatus() {
-        return status;
-    }
-
-    public void setStatus(boolean status) {
-        this.status = status;
-    }
 }
